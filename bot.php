@@ -22,6 +22,46 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 
+			if ($text == 'nong') {
+				$messages = [
+					'type' => 'imagemap',
+					'baseUrl' => 'https://qonlinebot.herokuapp.com/assets/image1.jpg',
+					'altText' => 'This is an imagemap',
+					'baseSize' => [
+						'width' => 1040,
+						'height' => 500
+					],
+					'actions': [[
+						'type' => 'uri',
+						'linkUri' =? 'https://www.facebook.com',
+						'area': [
+							'x' => 0,
+							'y' => 0,
+							'width' => 500,
+							'height' => 500
+						]
+					], [
+						'type' => 'uri',
+						'linkUri' =? 'https://www.facebook.com',
+						'area': [
+							'x' => 500,
+							'y' => 0,
+							'width' => 500,
+							'height' => 500
+						]
+					], [
+						'type' => 'message',
+						'text' => 'hello',
+						'area': [
+							'x' => 0,
+							'y' => 0,
+							'width' => 500,
+							'height' => 500
+						]
+					]]
+				];
+			}
+
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
