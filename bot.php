@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
 			if ($text == 'nong') {
 				$messages = [
 					'type' => 'imagemap',
-					'baseUrl' => 'https://qonlinebot.herokuapp.com/assets/image1.jpg',
+					'baseUrl' => 'https://qonlinebot.herokuapp.com/assets/image1.jpg/700',
 					'altText' => 'This is an imagemap',
 					'baseSize' => [
 						'width' => 1040,
