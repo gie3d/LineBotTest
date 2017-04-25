@@ -31,10 +31,10 @@ if (!is_null($events['events'])) {
 						'width' => 1040,
 						'height' => 500
 					],
-					'actions': [[
+					'actions' => [[
 						'type' => 'uri',
-						'linkUri' =? 'https://www.facebook.com',
-						'area': [
+						'linkUri' => 'https://www.facebook.com',
+						'area' => [
 							'x' => 0,
 							'y' => 0,
 							'width' => 500,
@@ -42,8 +42,8 @@ if (!is_null($events['events'])) {
 						]
 					], [
 						'type' => 'uri',
-						'linkUri' =? 'https://www.facebook.com',
-						'area': [
+						'linkUri' => 'https://www.facebook.com',
+						'area' => [
 							'x' => 500,
 							'y' => 0,
 							'width' => 500,
@@ -52,7 +52,7 @@ if (!is_null($events['events'])) {
 					], [
 						'type' => 'message',
 						'text' => 'hello',
-						'area': [
+						'area' => [
 							'x' => 0,
 							'y' => 0,
 							'width' => 500,
